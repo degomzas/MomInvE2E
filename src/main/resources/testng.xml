@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.mominv.qa.extentReportListener.ExtentReporterNG" />
+    </listeners>
+    <test name="RegistrationTests">
+        <classes>
+            <class name="com.mominv.qa.RegistrationTests"></class>
+        </classes>
+    </test>
+    <test name="LoginTests">
+        <classes>
+            <class name="com.mominv.qa.LoginTests"></class>
+        </classes>
+    </test>
+</suite>
+
